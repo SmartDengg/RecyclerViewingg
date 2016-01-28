@@ -6,18 +6,15 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".BaseActivity"
 >
-
   <Button
-      android:id="@+id/main_layout_linear_btn"
-      tools:text="Linear RecyclerView"
+      android:id="@+id/grid_layout_standard_btn"
+      tools:text="Vertical RecyclerView"
       style="@style/button_style"/>
 
   <Button
-      android:id="@+id/main_layout_grid_btn"
-      tools:text="Grid RecyclerView"
+      android:id="@+id/grid_layout_auto_fix_btn"
+      tools:text="Horizontal RecyclerView"
       style="@style/button_style"/>
-
 
 </LinearLayout>
