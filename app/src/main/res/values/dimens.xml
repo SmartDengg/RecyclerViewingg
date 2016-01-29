@@ -7,8 +7,11 @@
   <dimen name="material_8dp">8dip</dimen>
   <dimen name="material_16dp">16dip</dimen>
   <dimen name="material_24dp">24dip</dimen>
+  <dimen name="material_48dp">48dip</dimen>
   <dimen name="material_264dp">64dip</dimen>
   <dimen name="material_80dp">80dip</dimen>
+  <dimen name="material_96dp">96dip</dimen>
+  <dimen name="material_112dp">112dip</dimen>
   <dimen name="material_128dp">128dip</dimen>
 
 </resources>

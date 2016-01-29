@@ -9,4 +9,7 @@
   <string name="grid_recyclerView_standard">Standard</string>
   <string name="grid_recyclerView_auto_fix">Auto fix</string>
 
+
+  <string name="staggered_recyclerView">Staggered RecyclerView</string>
+
 </resources>

@@ -4,17 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
->
-  <Button
-      android:id="@+id/grid_layout_standard_btn"
-      tools:text="Vertical RecyclerView"
-      style="@style/button_style"/>
+    >
 
-  <Button
-      android:id="@+id/grid_layout_auto_fix_btn"
-      tools:text="Horizontal RecyclerView"
-      style="@style/button_style"/>
+  <include layout="@layout/include_toolbar_layout"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:orientation="vertical"
+      >
+
+    <Button
+        android:id="@+id/grid_layout_standard_btn"
+        tools:text="Vertical RecyclerView"
+        style="@style/button_style"/>
+
+    <Button
+        android:id="@+id/grid_layout_auto_fix_btn"
+        tools:text="Horizontal RecyclerView"
+        style="@style/button_style"/>
+
+  </LinearLayout>
 
 </LinearLayout>

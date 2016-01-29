@@ -8,7 +8,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import butterknife.Bind;
 import com.smartdengg.recyclerviewingg.BaseActivity;
-import com.smartdengg.recyclerviewingg.IconHelpler;
+import com.smartdengg.recyclerviewingg.IconHelper;
 import com.smartdengg.recyclerviewingg.R;
 import com.smartdengg.recyclerviewingg.adapter.DrawableAdapter;
 import com.smartdengg.recyclerviewingg.decoration.MarginDecoration;
@@ -40,6 +40,13 @@ public class LinearVerticalActivity extends BaseActivity {
     recyclerView.setHasFixedSize(true);
     recyclerView.setLayoutManager(layoutManager);
     recyclerView.setAdapter(
-        DrawableAdapter.created(LinearVerticalActivity.this, IconHelpler.ICONS, DrawableAdapter.ORANGE));
+        DrawableAdapter.created(LinearVerticalActivity.this, IconHelper.ICONS, DrawableAdapter.ORANGE));
+  }
+
+  @Override public void setupToolbar() {
+    getSupportActionBar().setTitle(getResources().getString(R.string.linear_recyclerView_vertical));
+
+    LinearVerticalActivity.this.setNavigationIcon(toolbar, R.drawable.ic_arrow_back);
+    LinearVerticalActivity.this.polishDrawable(toolbar.getNavigationIcon(), android.R.color.white);
   }
 }

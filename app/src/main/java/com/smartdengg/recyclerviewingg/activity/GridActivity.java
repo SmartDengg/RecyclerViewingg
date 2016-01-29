@@ -39,6 +39,13 @@ public class GridActivity extends BaseActivity {
   }
 
   @NonNull @OnClick(R.id.grid_layout_auto_fix_btn) void onHorizontalClick() {
-    //LinearHorizontalActivity.navigateToHorizontalActivity(GridActivity.this);
+    GridAutoFixActivity.navigateToGridAutoFixActivity(GridActivity.this);
+  }
+
+  @Override public void setupToolbar() {
+    getSupportActionBar().setTitle(getResources().getString(R.string.grid_recyclerView));
+
+    GridActivity.this.setNavigationIcon(toolbar, R.drawable.ic_arrow_back);
+    GridActivity.this.polishDrawable(toolbar.getNavigationIcon(), android.R.color.white);
   }
 }

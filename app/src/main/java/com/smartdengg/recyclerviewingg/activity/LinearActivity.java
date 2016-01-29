@@ -41,4 +41,11 @@ public class LinearActivity extends BaseActivity {
   @NonNull @OnClick(R.id.linear_layout_horizontal_btn) void onHorizontalClick() {
     LinearHorizontalActivity.navigateToHorizontalActivity(LinearActivity.this);
   }
+
+  @Override public void setupToolbar() {
+    getSupportActionBar().setTitle(getResources().getString(R.string.linear_recyclerView));
+
+    LinearActivity.this.setNavigationIcon(toolbar, R.drawable.ic_arrow_back);
+    LinearActivity.this.polishDrawable(toolbar.getNavigationIcon(), android.R.color.white);
+  }
 }

@@ -22,8 +22,9 @@ public class DrawableAdapter extends RecyclerView.Adapter<DrawableAdapter.ViewHo
 
   public static final int ORANGE = 1;
   public static final int BLUE = 2;
+  public static final int PURPLE = 3;
 
-  @Retention(RetentionPolicy.SOURCE) @IntDef({ ORANGE, BLUE }) private @interface TYPE {}
+  @Retention(RetentionPolicy.SOURCE) @IntDef({ ORANGE, BLUE, PURPLE }) private @interface TYPE {}
 
   private Context context;
   private List<Integer> items;
@@ -44,7 +45,10 @@ public class DrawableAdapter extends RecyclerView.Adapter<DrawableAdapter.ViewHo
     if (type == ORANGE) {
       return new ViewHolder(LayoutInflater.from(context).inflate(R.layout.drawable_card_orange_item, parent, false));
     }
-    return new ViewHolder(LayoutInflater.from(context).inflate(R.layout.drawable_card_bule_item, parent, false));
+    if (type == BLUE) {
+      return new ViewHolder(LayoutInflater.from(context).inflate(R.layout.drawable_card_bule_item, parent, false));
+    }
+    return new ViewHolder(LayoutInflater.from(context).inflate(R.layout.drawable_card_purple_item, parent, false));
   }
 
   @Override public void onBindViewHolder(ViewHolder holder, int position) {
