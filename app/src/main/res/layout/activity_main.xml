@@ -32,6 +32,11 @@
         tools:text="Staggered RecyclerView"
         style="@style/button_style"/>
 
+    <Button
+        android:id="@+id/main_layout_decoration_btn"
+        tools:text="Staggered RecyclerView"
+        style="@style/button_style"/>
+
   </LinearLayout>
 
 

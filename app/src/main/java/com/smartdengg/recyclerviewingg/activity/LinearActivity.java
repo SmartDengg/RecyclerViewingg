@@ -16,6 +16,7 @@ import com.smartdengg.recyclerviewingg.R;
  */
 public class LinearActivity extends BaseActivity {
 
+  @BindString(R.string.linear_recyclerView) protected String title;
   @BindString(R.string.linear_recyclerView_vertical) protected String verticalString;
   @BindString(R.string.linear_recyclerView_horizontal) protected String horizontalString;
 
@@ -43,7 +44,7 @@ public class LinearActivity extends BaseActivity {
   }
 
   @Override public void setupToolbar() {
-    getSupportActionBar().setTitle(getResources().getString(R.string.linear_recyclerView));
+    getSupportActionBar().setTitle(title);
 
     LinearActivity.this.setNavigationIcon(toolbar, R.drawable.ic_arrow_back);
     LinearActivity.this.polishDrawable(toolbar.getNavigationIcon(), android.R.color.white);

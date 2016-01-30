@@ -7,7 +7,7 @@ import java.util.Random;
 /**
  * Created by SmartDengg on 2016/1/28.
  */
-public class IconHelper {
+public class IconsHelper {
 
   public static List<Integer> ICONS =
       Arrays.asList(R.drawable.icon_item_1, R.drawable.icon_item_2, R.drawable.icon_item_3, R.drawable.icon_item_4,
@@ -50,10 +50,11 @@ public class IconHelper {
   }
 
   public static Integer getRandomCatIcon() {
-    return ICONS.get(new Random().nextInt(CAT_ICONS.size()));
+    return CAT_ICONS.get(new Random().nextInt(CAT_ICONS.size()));
   }
 
   public static Integer getRandomBeeIcon() {
-    return ICONS.get(new Random().nextInt(BEE_ICONS.size()));
+    return BEE_ICONS.get(new Random().nextInt(BEE_ICONS.size()));
   }
+
 }

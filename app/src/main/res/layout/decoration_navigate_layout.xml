@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    >
+>
 
   <include layout="@layout/include_toolbar_layout"/>
 
@@ -14,14 +14,14 @@
       android:layout_height="match_parent"
       android:gravity="center"
       android:orientation="vertical"
-      >
+  >
 
     <Button
-        android:id="@+id/linear_layout_vertical_btn"
+        android:id="@+id/decoration_navigate_layout_standard_btn"
         style="@style/button_style"/>
 
     <Button
-        android:id="@+id/linear_layout_horizontal_btn"
+        android:id="@+id/decoration_navigate_layout_over_btn"
         style="@style/button_style"/>
   </LinearLayout>
 

@@ -16,6 +16,7 @@ import com.smartdengg.recyclerviewingg.R;
  */
 public class GridActivity extends BaseActivity {
 
+  @BindString(R.string.grid_recyclerView) protected String title;
   @BindString(R.string.grid_recyclerView_standard) protected String standardString;
   @BindString(R.string.grid_recyclerView_auto_fix) protected String autoFixString;
 
@@ -43,7 +44,7 @@ public class GridActivity extends BaseActivity {
   }
 
   @Override public void setupToolbar() {
-    getSupportActionBar().setTitle(getResources().getString(R.string.grid_recyclerView));
+    getSupportActionBar().setTitle(title);
 
     GridActivity.this.setNavigationIcon(toolbar, R.drawable.ic_arrow_back);
     GridActivity.this.polishDrawable(toolbar.getNavigationIcon(), android.R.color.white);

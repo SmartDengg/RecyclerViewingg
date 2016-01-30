@@ -8,7 +8,7 @@
       android:label="@string/app_name"
       android:supportsRtl="true"
       android:theme="@style/AppTheme"
-      >
+  >
 
     <activity android:name=".activity.MainActivity" android:screenOrientation="portrait">
       <intent-filter>
@@ -26,6 +26,11 @@
     <activity android:name=".activity.GridAutoFixActivity" android:screenOrientation="portrait"/>
 
     <activity android:name=".activity.StaggeredActivity" android:screenOrientation="portrait"/>
+
+    <activity android:name=".activity.DecorationActivity" android:screenOrientation="portrait"/>
+    <activity android:name=".activity.DecorationActivityyyy" android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.WhiteDivider"
+    />
 
   </application>
 

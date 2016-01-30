@@ -8,8 +8,9 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import butterknife.Bind;
+import butterknife.BindString;
 import com.smartdengg.recyclerviewingg.BaseActivity;
-import com.smartdengg.recyclerviewingg.IconHelper;
+import com.smartdengg.recyclerviewingg.IconsHelper;
 import com.smartdengg.recyclerviewingg.R;
 import com.smartdengg.recyclerviewingg.adapter.DrawableAdapter;
 import com.smartdengg.recyclerviewingg.decoration.MarginDecoration;
@@ -18,6 +19,8 @@ import com.smartdengg.recyclerviewingg.decoration.MarginDecoration;
  * Created by SmartDengg on 2016/1/29.
  */
 public class GridStandardActivity extends BaseActivity {
+
+  @NonNull @BindString(R.string.grid_recyclerView_standard) protected String title;
 
   @NonNull @Bind(R.id.main_recycler_layout_rv) protected RecyclerView recyclerView;
 
@@ -41,11 +44,11 @@ public class GridStandardActivity extends BaseActivity {
     recyclerView.setHasFixedSize(true);
     recyclerView.setLayoutManager(gridLayoutManager);
     recyclerView.setAdapter(
-        DrawableAdapter.created(GridStandardActivity.this, IconHelper.BEE_ICONS, DrawableAdapter.BLUE));
+        DrawableAdapter.created(GridStandardActivity.this, IconsHelper.BEE_ICONS, DrawableAdapter.BLUE));
   }
 
   @Override public void setupToolbar() {
-    getSupportActionBar().setTitle(getResources().getString(R.string.grid_recyclerView_standard));
+    getSupportActionBar().setTitle(title);
 
     GridStandardActivity.this.setNavigationIcon(toolbar, R.drawable.ic_arrow_back);
     GridStandardActivity.this.polishDrawable(toolbar.getNavigationIcon(), android.R.color.white);

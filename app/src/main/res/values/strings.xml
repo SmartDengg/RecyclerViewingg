@@ -9,7 +9,10 @@
   <string name="grid_recyclerView_standard">Standard</string>
   <string name="grid_recyclerView_auto_fix">Auto fix</string>
 
-
   <string name="staggered_recyclerView">Staggered RecyclerView</string>
+
+  <string name="decoration_recyclerView">Decoration RecyclerView</string>
+  <string name="decoration_recyclerView_standard">Standard Draw</string>
+  <string name="decoration_recyclerView_over">Over Draw</string>
 
 </resources>

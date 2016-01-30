@@ -12,7 +12,6 @@
     app:cardElevation="@dimen/material_4dp"
     >
 
-
   <ImageView
       android:id="@+id/drawable_card_item_iv"
       android:layout_width="wrap_content"

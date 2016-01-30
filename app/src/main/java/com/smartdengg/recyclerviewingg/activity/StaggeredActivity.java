@@ -9,7 +9,7 @@ import android.support.v7.widget.StaggeredGridLayoutManager;
 import butterknife.Bind;
 import butterknife.BindString;
 import com.smartdengg.recyclerviewingg.BaseActivity;
-import com.smartdengg.recyclerviewingg.IconHelper;
+import com.smartdengg.recyclerviewingg.IconsHelper;
 import com.smartdengg.recyclerviewingg.R;
 import com.smartdengg.recyclerviewingg.adapter.DrawableAdapter;
 import com.smartdengg.recyclerviewingg.decoration.MarginDecoration;
@@ -19,8 +19,9 @@ import com.smartdengg.recyclerviewingg.decoration.MarginDecoration;
  */
 public class StaggeredActivity extends BaseActivity {
 
+  @BindString(R.string.staggered_recyclerView) protected String title;
+
   @NonNull @Bind(R.id.main_recycler_layout_rv) protected RecyclerView recyclerView;
-  @BindString(R.string.staggered_recyclerView) protected String staggeredString;
 
   public static void navigateToStaggeredActivity(BaseActivity startingActivity) {
     startingActivity.startActivity(new Intent(startingActivity, StaggeredActivity.class));
@@ -41,11 +42,11 @@ public class StaggeredActivity extends BaseActivity {
     recyclerView.setHasFixedSize(true);
     recyclerView.setLayoutManager(staggeredGridLayoutManager);
     recyclerView.setAdapter(
-        DrawableAdapter.created(StaggeredActivity.this, IconHelper.ALL_ICONS, DrawableAdapter.PURPLE));
+        DrawableAdapter.created(StaggeredActivity.this, IconsHelper.ALL_ICONS, DrawableAdapter.PURPLE));
   }
 
   @Override public void setupToolbar() {
-    getSupportActionBar().setTitle(staggeredString);
+    getSupportActionBar().setTitle(title);
 
     StaggeredActivity.this.setNavigationIcon(toolbar, R.drawable.ic_arrow_back);
     StaggeredActivity.this.polishDrawable(toolbar.getNavigationIcon(), android.R.color.white);
