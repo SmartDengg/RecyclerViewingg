@@ -24,6 +24,10 @@
         android:id="@+id/grid_layout_auto_fix_btn"
         style="@style/button_style"/>
 
+    <Button
+        android:id="@+id/grid_layout_header_btn"
+        style="@style/button_style"/>
+
   </LinearLayout>
 
 </LinearLayout>

@@ -59,6 +59,10 @@ public class DrawableAdapter extends RecyclerView.Adapter<DrawableAdapter.ViewHo
     return (this.items != null) ? items.size() : 0;
   }
 
+  public boolean isHeader(int position) {
+    return position == 0;
+  }
+
   public class ViewHolder extends RecyclerView.ViewHolder {
 
     @NonNull @Bind(R.id.drawable_card_item_iv) protected ImageView bitmapIv;

@@ -45,7 +45,7 @@ public class DecorationActivityyyy extends BaseActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.main_recycler_layout);
 
-    Integer decorationType = getIntent().getIntExtra(TYPE, 1);
+    Integer decorationType = getIntent().getIntExtra(TYPE, STANDARD_DRAW);
     DecorationActivityyyy.this.initView(decorationType);
 
     getSupportActionBar().setTitle(decorationType == STANDARD_DRAW ? standardString : overString);

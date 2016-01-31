@@ -22,7 +22,7 @@
     <activity android:name=".activity.LinearHorizontalActivity" android:screenOrientation="portrait"/>
 
     <activity android:name=".activity.GridActivity" android:screenOrientation="portrait"/>
-    <activity android:name=".activity.GridStandardActivity" android:screenOrientation="portrait"/>
+    <activity android:name=".activity.GridStandarOrHeaderdActivity" android:screenOrientation="portrait"/>
     <activity android:name=".activity.GridAutoFixActivity" android:screenOrientation="portrait"/>
 
     <activity android:name=".activity.StaggeredActivity" android:screenOrientation="portrait"/>
