@@ -63,7 +63,7 @@ public class DrawableAdapter extends RecyclerView.Adapter<DrawableAdapter.ViewHo
     return position == 0;
   }
 
-  public class ViewHolder extends RecyclerView.ViewHolder {
+  public static final class ViewHolder extends RecyclerView.ViewHolder {
 
     @NonNull @Bind(R.id.drawable_card_item_iv) protected ImageView bitmapIv;
 

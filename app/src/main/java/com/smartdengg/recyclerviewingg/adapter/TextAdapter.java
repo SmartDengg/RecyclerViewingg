@@ -42,7 +42,7 @@ public class TextAdapter extends RecyclerView.Adapter<TextAdapter.ViewHolder> {
     return (this.items != null) ? items.size() : 0;
   }
 
-  public class ViewHolder extends RecyclerView.ViewHolder {
+  public static final class ViewHolder extends RecyclerView.ViewHolder {
 
     @NonNull @Bind(R.id.text_item_tv) protected TextView textView;
 
