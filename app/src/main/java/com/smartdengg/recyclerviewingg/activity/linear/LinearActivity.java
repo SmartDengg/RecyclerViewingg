@@ -1,4 +1,4 @@
-package com.smartdengg.recyclerviewingg.activity;
+package com.smartdengg.recyclerviewingg.activity.linear;
 
 import android.content.Intent;
 import android.os.Bundle;

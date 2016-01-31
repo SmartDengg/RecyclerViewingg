@@ -1,4 +1,4 @@
-package com.smartdengg.recyclerviewingg.activity;
+package com.smartdengg.recyclerviewingg.activity.linear;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,39 +17,39 @@ import com.smartdengg.recyclerviewingg.decoration.MarginDecoration;
 /**
  * Created by SmartDengg on 2016/1/29.
  */
-public class LinearHorizontalActivity extends BaseActivity {
+public class LinearVerticalActivity extends BaseActivity {
 
-  @NonNull @BindString(R.string.linear_recyclerView_horizontal) protected String title;
+  @NonNull @BindString(R.string.linear_recyclerView_vertical) protected String title;
 
   @NonNull @Bind(R.id.main_recycler_layout_rv) protected RecyclerView recyclerView;
 
-  public static void navigateToHorizontalActivity(BaseActivity startingActivity) {
-    startingActivity.startActivity(new Intent(startingActivity, LinearHorizontalActivity.class));
+  public static void navigateToVerticalActivity(BaseActivity startingActivity) {
+    startingActivity.startActivity(new Intent(startingActivity, LinearVerticalActivity.class));
   }
 
   @Override protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.main_recycler_layout);
-    LinearHorizontalActivity.this.initView();
+    LinearVerticalActivity.this.initView();
   }
 
   private void initView() {
 
-    LinearLayoutManager layoutManager = new LinearLayoutManager(LinearHorizontalActivity.this);
-    layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
+    LinearLayoutManager layoutManager = new LinearLayoutManager(LinearVerticalActivity.this);
+    layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
     layoutManager.setSmoothScrollbarEnabled(true);
 
-    recyclerView.addItemDecoration(new MarginDecoration(LinearHorizontalActivity.this));
+    recyclerView.addItemDecoration(new MarginDecoration(LinearVerticalActivity.this));
     recyclerView.setHasFixedSize(true);
     recyclerView.setLayoutManager(layoutManager);
     recyclerView.setAdapter(
-        DrawableAdapter.created(LinearHorizontalActivity.this, IconsHelper.ICONS, DrawableAdapter.ORANGE));
+        DrawableAdapter.created(LinearVerticalActivity.this, IconsHelper.ICONS, DrawableAdapter.ORANGE));
   }
 
   @Override public void setupToolbar() {
     getSupportActionBar().setTitle(title);
 
-    LinearHorizontalActivity.this.setNavigationIcon(toolbar, R.drawable.ic_arrow_back);
-    LinearHorizontalActivity.this.polishDrawable(toolbar.getNavigationIcon(), android.R.color.white);
+    LinearVerticalActivity.this.setNavigationIcon(toolbar, R.drawable.ic_arrow_back);
+    LinearVerticalActivity.this.polishDrawable(toolbar.getNavigationIcon(), android.R.color.white);
   }
 }

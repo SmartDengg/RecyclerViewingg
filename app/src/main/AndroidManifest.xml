@@ -17,20 +17,24 @@
       </intent-filter>
     </activity>
 
-    <activity android:name=".activity.LinearActivity" android:screenOrientation="portrait"/>
-    <activity android:name=".activity.LinearVerticalActivity" android:screenOrientation="portrait"/>
-    <activity android:name=".activity.LinearHorizontalActivity" android:screenOrientation="portrait"/>
+    <activity android:name=".activity.linear.LinearActivity" android:screenOrientation="portrait"/>
+    <activity android:name=".activity.linear.LinearVerticalActivity" android:screenOrientation="portrait"/>
+    <activity android:name=".activity.linear.LinearHorizontalActivity" android:screenOrientation="portrait"/>
 
-    <activity android:name=".activity.GridActivity" android:screenOrientation="portrait"/>
-    <activity android:name=".activity.GridStandarOrHeaderdActivity" android:screenOrientation="portrait"/>
-    <activity android:name=".activity.GridAutoFixActivity" android:screenOrientation="portrait"/>
+    <activity android:name=".activity.grid.GridActivity" android:screenOrientation="portrait"/>
+    <activity android:name=".activity.grid.GridStandarOrHeaderdActivity" android:screenOrientation="portrait"/>
+    <activity android:name=".activity.grid.GridAutoFixActivity" android:screenOrientation="portrait"/>
 
-    <activity android:name=".activity.StaggeredActivity" android:screenOrientation="portrait"/>
+    <activity android:name=".activity.staggered.StaggeredActivity" android:screenOrientation="portrait"/>
 
-    <activity android:name=".activity.DecorationActivity" android:screenOrientation="portrait"/>
-    <activity android:name=".activity.DecorationActivityyyy" android:screenOrientation="portrait"
+    <activity android:name=".activity.decoration.DecorationActivity" android:screenOrientation="portrait"/>
+    <activity android:name=".activity.decoration.DecorationActivityyyy" android:screenOrientation="portrait"
         android:theme="@style/AppTheme.WhiteDivider"
     />
+
+    <activity android:name=".activity.ItemAnimator.ItemAnimatorActivity" android:screenOrientation="portrait"/>
+    <activity android:name=".activity.ItemAnimator.ItemAnimatorHeaderActivity" android:screenOrientation="portrait"/>
+    <activity android:name=".activity.ItemAnimator.ItemAnimatorFooterActivity" android:screenOrientation="portrait"/>
 
   </application>
 

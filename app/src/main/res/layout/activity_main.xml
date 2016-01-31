@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".BaseActivity"
-    >
+>
 
   <include layout="@layout/include_toolbar_layout"/>
 
@@ -15,7 +15,7 @@
       android:layout_height="match_parent"
       android:gravity="center"
       android:orientation="vertical"
-      >
+  >
 
     <Button
         android:id="@+id/main_layout_linear_btn"
@@ -35,6 +35,11 @@
     <Button
         android:id="@+id/main_layout_decoration_btn"
         tools:text="Staggered RecyclerView"
+        style="@style/button_style"/>
+
+    <Button
+        android:id="@+id/main_layout_animator_btn"
+        tools:text="Animator RecyclerView"
         style="@style/button_style"/>
 
   </LinearLayout>
