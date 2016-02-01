@@ -43,7 +43,11 @@ public class ItemAnimatorHeaderActivity extends BaseActivity {
 
   private void initView() {
 
-    LinearLayoutManager layoutManager = new LinearLayoutManager(ItemAnimatorHeaderActivity.this);
+    LinearLayoutManager layoutManager = new LinearLayoutManager(ItemAnimatorHeaderActivity.this) {
+      @Override public boolean supportsPredictiveItemAnimations() {
+        return true;
+      }
+    };
     layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
     layoutManager.setSmoothScrollbarEnabled(true);
 
