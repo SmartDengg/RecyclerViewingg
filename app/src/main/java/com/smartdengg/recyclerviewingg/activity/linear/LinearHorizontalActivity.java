@@ -29,7 +29,7 @@ public class LinearHorizontalActivity extends BaseActivity {
 
   @Override protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.main_recycler_layout);
+    setContentView(R.layout.recycler_main_layout);
     LinearHorizontalActivity.this.initView();
   }
 

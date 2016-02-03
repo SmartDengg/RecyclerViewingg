@@ -36,6 +36,8 @@
     <activity android:name=".activity.ItemAnimator.ItemAnimatorHeaderActivity" android:screenOrientation="portrait"/>
     <activity android:name=".activity.ItemAnimator.ItemAnimatorFooterActivity" android:screenOrientation="portrait"/>
 
+    <activity android:name=".activity.swipe.SwipeRefreshActivity" android:screenOrientation="portrait"/>
+
   </application>
 
 </manifest>

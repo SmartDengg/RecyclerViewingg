@@ -29,7 +29,7 @@ public class LinearActivity extends BaseActivity {
 
   @Override protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.linear_navigate_layout);
+    setContentView(R.layout.navigate_linear_layout);
 
     this.verticalBtn.setText(verticalString);
     this.horizontalBtn.setText(horizontalString);

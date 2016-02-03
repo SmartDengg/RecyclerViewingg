@@ -2,7 +2,6 @@
 
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -10,13 +9,15 @@
 
   <include layout="@layout/include_toolbar_layout"/>
 
-  <android.support.v7.widget.RecyclerView
-      android:id="@+id/main_recycler_layout_rv"
+  <android.support.v4.widget.SwipeRefreshLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:id="@+id/swipe_layout_sr"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      android:padding="@dimen/material_8dp"
-      android:clipToPadding="false"
-      tools:listitem="@layout/text_item"
-      />
+      >
+
+    <include layout="@layout/include_recyclerview_layout"/>
+
+  </android.support.v4.widget.SwipeRefreshLayout>
 
 </LinearLayout>

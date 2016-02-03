@@ -9,7 +9,6 @@
   <include layout="@layout/include_toolbar_layout"/>
 
   <com.smartdengg.recyclerviewingg.AutofitRecyclerView
-
       android:id="@+id/autofix_recycler_layout_rv"
       android:layout_width="match_parent"
       android:layout_height="match_parent"

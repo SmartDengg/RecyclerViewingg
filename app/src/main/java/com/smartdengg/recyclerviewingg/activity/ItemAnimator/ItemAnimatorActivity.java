@@ -29,7 +29,7 @@ public class ItemAnimatorActivity extends BaseActivity {
 
   @Override protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.itemanimator_navigate_layout);
+    setContentView(R.layout.navigate_itemanimator_layout);
 
     this.headerBtn.setText(headerString);
     this.footerBtn.setText(footerString);

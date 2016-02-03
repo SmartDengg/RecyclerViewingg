@@ -31,7 +31,7 @@ public class GridActivity extends BaseActivity {
 
   @Override protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.grid_navigate_layout);
+    setContentView(R.layout.navigate_grid__layout);
 
     this.standardBtn.setText(standardString);
     this.autoFixBtn.setText(autoFixString);

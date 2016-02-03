@@ -29,7 +29,7 @@ public class DecorationActivity extends BaseActivity {
 
   @Override protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.decoration_navigate_layout);
+    setContentView(R.layout.navigate_decoration_layout);
 
     this.standardBtn.setText(standardString);
     this.overBtn.setText(overString);

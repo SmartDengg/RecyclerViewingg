@@ -20,4 +20,6 @@
   <string name="handle_header">Header</string>
   <string name="handle_footer">Footer</string>
 
+  <string name="swipe_recyclerView">SwipeRefresh RecyclerView</string>
+
 </resources>

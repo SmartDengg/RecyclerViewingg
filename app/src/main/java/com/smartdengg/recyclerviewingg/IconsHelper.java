@@ -57,4 +57,8 @@ public class IconsHelper {
     return BEE_ICONS.get(new Random().nextInt(BEE_ICONS.size()));
   }
 
+  public static int[] colors = new int[] {
+      android.R.color.holo_blue_light, android.R.color.holo_green_light, android.R.color.holo_orange_light,
+      android.R.color.holo_red_light
+  };
 }

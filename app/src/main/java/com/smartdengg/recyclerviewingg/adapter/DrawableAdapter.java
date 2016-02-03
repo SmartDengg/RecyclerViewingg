@@ -63,6 +63,11 @@ public class DrawableAdapter extends RecyclerView.Adapter<DrawableAdapter.ViewHo
     return position == 0;
   }
 
+  public void updateItems(List<Integer> items) {
+    this.items = items;
+    DrawableAdapter.this.notifyDataSetChanged();
+  }
+
   public static final class ViewHolder extends RecyclerView.ViewHolder {
 
     @NonNull @Bind(R.id.drawable_card_item_iv) protected ImageView bitmapIv;
