@@ -15,5 +15,4 @@
       android:columnWidth="@dimen/material_112dp"
       android:clipToPadding="false"/>
 
-
 </LinearLayout>

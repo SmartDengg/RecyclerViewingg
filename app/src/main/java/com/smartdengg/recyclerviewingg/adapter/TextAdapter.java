@@ -29,6 +29,8 @@ public class TextAdapter extends RecyclerView.Adapter<TextAdapter.ViewHolder> {
     this.items = items;
   }
 
+
+
   @Override public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
     return new ViewHolder(LayoutInflater.from(context).inflate(R.layout.text_item, parent, false));
