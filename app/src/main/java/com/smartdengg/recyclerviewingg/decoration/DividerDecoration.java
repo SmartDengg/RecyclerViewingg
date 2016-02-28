@@ -8,7 +8,6 @@ import android.graphics.drawable.Drawable;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-
 import com.smartdengg.recyclerviewingg.R;
 
 /**
@@ -23,9 +22,16 @@ public class DividerDecoration extends RecyclerView.ItemDecoration {
 
   public DividerDecoration(Context context) {
     this.context = context;
-    final TypedArray styledAttributes = context.obtainStyledAttributes(ATTRS);
-    mDivider = styledAttributes.getDrawable(0);
-    styledAttributes.recycle();
+
+    TypedArray styledAttributes = null;
+    try {
+      styledAttributes = context.obtainStyledAttributes(ATTRS);
+      mDivider = styledAttributes.getDrawable(0);
+    } finally {
+      if (styledAttributes != null) {
+        styledAttributes.recycle();
+      }
+    }
   }
 
   public DividerDecoration(Context context, int resId) {
@@ -36,8 +42,9 @@ public class DividerDecoration extends RecyclerView.ItemDecoration {
   @Override public void onDraw(Canvas c, RecyclerView parent, RecyclerView.State state) {
 
     int left = parent.getPaddingLeft() + context.getResources().getDimensionPixelOffset(R.dimen.material_24dp);
-    int right = parent.getWidth() - parent.getPaddingRight() - context.getResources()
-                                                                      .getDimensionPixelOffset(R.dimen.material_24dp);
+    int right = parent.getWidth() - parent.getPaddingRight() - context
+        .getResources()
+        .getDimensionPixelOffset(R.dimen.material_24dp);
 
     int childCount = parent.getChildCount();
     for (int i = 0; i < childCount; i++) {

@@ -8,4 +8,4 @@
     android:padding="@dimen/material_8dp"
     android:clipToPadding="false"
     tools:listitem="@layout/text_item"
-    tools:showIn="@layout/main_recycler_layout"/>
+/>

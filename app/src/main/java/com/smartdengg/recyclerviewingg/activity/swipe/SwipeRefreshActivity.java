@@ -100,16 +100,6 @@ public class SwipeRefreshActivity extends BaseActivity {
           items.add(IconsHelper.getRandomBeeIcon());
           break;
       }
-
-      /*格式太规则，咕~~~*/
-      /*items.add(IconsHelper.getRandomIcon());
-      items.add(IconsHelper.getRandomCatIcon());
-      items.add(IconsHelper.getRandomBeeIcon());*/
-
-      /*太少了，囧~~~*/
-     /* items.add(icons[(new Random().nextInt(icons.length))]);
-      items.add(icons[(new Random().nextInt(icons.length))]);
-      items.add(icons[(new Random().nextInt(icons.length))]);*/
     }
 
     return items;

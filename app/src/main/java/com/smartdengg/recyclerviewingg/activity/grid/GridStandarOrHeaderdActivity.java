@@ -41,6 +41,7 @@ public class GridStandarOrHeaderdActivity extends BaseActivity {
     Intent intent = new Intent(startingActivity, GridStandarOrHeaderdActivity.class);
     intent.putExtra(TYPE, type);
 
+
     startingActivity.startActivity(intent);
   }
 

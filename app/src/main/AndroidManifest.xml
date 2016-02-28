@@ -27,7 +27,9 @@
 
     <activity android:name=".activity.staggered.StaggeredActivity" android:screenOrientation="portrait"/>
 
-    <activity android:name=".activity.decoration.DecorationActivity" android:screenOrientation="portrait"/>
+    <activity android:name=".activity.decoration.DecorationActivity" android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.WhiteDivider"
+    />
     <activity android:name=".activity.decoration.DecorationActivityyyy" android:screenOrientation="portrait"
         android:theme="@style/AppTheme.WhiteDivider"
     />
