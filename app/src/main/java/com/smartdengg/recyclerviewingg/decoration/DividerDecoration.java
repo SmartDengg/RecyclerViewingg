@@ -7,7 +7,6 @@ import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
-import android.util.TypedValue;
 import android.view.View;
 import com.smartdengg.recyclerviewingg.R;
 
@@ -26,7 +25,6 @@ public class DividerDecoration extends RecyclerView.ItemDecoration {
 
     TypedArray styledAttributes = null;
     try {
-      TypedValue value = new TypedValue();
       styledAttributes = context.getTheme().obtainStyledAttributes(ATTRS);
       mDivider = styledAttributes.getDrawable(0);
     } finally {
