@@ -1,44 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.smartdengg.recyclerviewingg">
+<manifest package="com.smartdengg.recyclerviewingg"
+  xmlns:android="http://schemas.android.com/apk/res/android">
 
   <application
-      android:allowBackup="true"
-      android:icon="@mipmap/ic_launcher"
-      android:label="@string/app_name"
-      android:supportsRtl="true"
-      android:theme="@style/AppTheme"
-  >
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme">
 
-    <activity android:name=".activity.MainActivity" android:screenOrientation="portrait">
+    <activity
+      android:name=".activity.MainActivity"
+      android:screenOrientation="portrait">
       <intent-filter>
-        <action android:name="android.intent.action.MAIN"/>
-        <category android:name="android.intent.category.LAUNCHER"/>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
 
-    <activity android:name=".activity.linear.LinearActivity" android:screenOrientation="portrait"/>
-    <activity android:name=".activity.linear.LinearVerticalActivity" android:screenOrientation="portrait"/>
-    <activity android:name=".activity.linear.LinearHorizontalActivity" android:screenOrientation="portrait"/>
+    <activity
+      android:name=".activity.linear.LinearActivity"
+      android:screenOrientation="portrait" />
+    <activity
+      android:name=".activity.linear.LinearVerticalActivity"
+      android:screenOrientation="portrait" />
+    <activity
+      android:name=".activity.linear.LinearHorizontalActivity"
+      android:screenOrientation="portrait" />
 
-    <activity android:name=".activity.grid.GridActivity" android:screenOrientation="portrait"/>
-    <activity android:name=".activity.grid.GridStandarOrHeaderdActivity" android:screenOrientation="portrait"/>
-    <activity android:name=".activity.grid.GridAutoFixActivity" android:screenOrientation="portrait"/>
+    <activity
+      android:name=".activity.grid.GridActivity"
+      android:screenOrientation="portrait" />
+    <activity
+      android:name=".activity.grid.GridStandarOrHeaderdActivity"
+      android:screenOrientation="portrait" />
+    <activity
+      android:name=".activity.grid.GridAutoFixActivity"
+      android:screenOrientation="portrait" />
 
-    <activity android:name=".activity.staggered.StaggeredActivity" android:screenOrientation="portrait"/>
+    <activity
+      android:name=".activity.staggered.StaggeredActivity"
+      android:screenOrientation="portrait" />
 
-    <activity android:name=".activity.decoration.DecorationActivity" android:screenOrientation="portrait"
-        android:theme="@style/AppTheme.WhiteDivider"
-    />
-    <activity android:name=".activity.decoration.DecorationActivityyyy" android:screenOrientation="portrait"
-        android:theme="@style/AppTheme.WhiteDivider"
-    />
+    <activity
+      android:name=".activity.decoration.DecorationActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/AppTheme.WhiteDivider" />
+    <activity
+      android:name=".activity.decoration.DecorationActivityyyy"
+      android:screenOrientation="portrait"
+      android:theme="@style/AppTheme.WhiteDivider" />
 
-    <activity android:name=".activity.ItemAnimator.ItemAnimatorActivity" android:screenOrientation="portrait"/>
-    <activity android:name=".activity.ItemAnimator.ItemAnimatorHeaderActivity" android:screenOrientation="portrait"/>
-    <activity android:name=".activity.ItemAnimator.ItemAnimatorFooterActivity" android:screenOrientation="portrait"/>
+    <activity
+      android:name=".activity.ItemAnimator.ItemAnimatorActivity"
+      android:screenOrientation="portrait" />
+    <activity
+      android:name=".activity.ItemAnimator.ItemAnimatorHeaderActivity"
+      android:screenOrientation="portrait" />
+    <activity
+      android:name=".activity.ItemAnimator.ItemAnimatorFooterActivity"
+      android:screenOrientation="portrait" />
 
-    <activity android:name=".activity.swipe.SwipeRefreshActivity" android:screenOrientation="portrait"/>
+    <activity
+      android:name=".activity.swipe.SwipeRefreshActivity"
+      android:screenOrientation="portrait" />
 
   </application>
 
